@@ -1,0 +1,416 @@
+<html>
+<head>
+
+<title>Verbesserte ao3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+<style>
+  header{
+  background: #f00000;
+background: linear-gradient(247deg, rgba(240, 0, 0, 1) 0%, rgba(197, 14, 22, 1) 41%, rgba(186, 18, 28, 1) 52%, rgba(173, 22, 34, 1) 64%, rgba(164, 25, 39, 1) 72%, rgba(159, 27, 42, 1) 78%, rgba(157, 28, 43, 1) 80%, rgba(150, 30, 46, 1) 86%, rgba(135, 34, 54, 1) 100%);
+padding: 30px;
+}
+
+ :root {
+  --grey: #999;
+  --shadow: rgba(0, 0, 0, 0.3);
+ }
+
+  .nosifer-regular {
+    font-family: "Nosifer", sans serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+  .ghost {
+    position: relative;
+    width: 120px; 
+    height: 150px;
+    background: white;
+    border-radius: 60px 60px 20px 20px;
+    box-shadow: 0 0 30px rgba(89, 57, 219, 0.6);
+    margin: 60px auto 0;
+    animation: float 2s ease-in-out  infinite;
+  }
+
+  .eye {
+  position: absolute;
+  top: 50px;
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+}
+.eye.left { left: 30px; }
+.eye.right { right: 30px; }
+
+.cheek {
+  position: absolute;
+  top: 75px;
+  width: 15px;
+  height: 15px;
+  background: #ffb6c1;
+  border-radius: 50%;
+}
+.cheek.left { left: 25px; }
+.cheek.right { right: 25px; }
+
+ 
+  .mouth{
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background: black;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .ghostF::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: white;
+  border-radius: 50% 50% 0 0;
+}
+
+
+  .shadow {
+    width: 80px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+    border-radius: 50%;
+    animation: shadow 2s ease-in-out infinite ;
+  }
+
+ @keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+ }
+
+ @keyframes shadow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+ }
+
+
+ .next-btn {
+  background: #5939db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 12px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.next-btn:hover {
+  background: #7a5fff;
+  transform: scale(1.05);
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+<body style="
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: larger;
+">
+   <header>
+    <h1 class="nosifer-regular">Archive of Scary Stories</h1>
+    <span>Browse</span>
+    <span>Sprache</span>
+    <span>Genre</span>
+    <button class="loginbutton">Anmelden</button>
+   </header>
+
+   <div class="ghost">
+    <div class="eye left"></div>
+    <div class="eye right"></div>
+    <div class="cheek left"></div>
+    <div class="cheek right"></div>
+    <div class="mouth"></div>
+  </div>
+  <div class="shadow"></div>
+
+   <style>
+    
+   </style> 
+
+   <main>
+   <center><p1><strong>Erste Geschichte</strong></p1></center>
+
+   <br>
+   <center><p2><strong><em>Birthday Bones</em></strong></p2></center>
+   <br>
+   <p3><strong>TW</strong></p3> 
+   <p4><strong>This story contains themes or mentions of physical violence, gore, or abuse.</strong></p4>
+  <br>
+  <br>
+  <p5>	The story’s the same every year. Light the candles, blow them out, eat the cake. I smile while everyone sings, I party with my friends, I have a few drinks, and I go home. Then, the second the clock hits 3:27, I sit up straight in bed and wait for my bones to break. 
+<br>
+            It’s an ugly sight, my limbs cracking and twisting, and the smell of blood and marrow isn’t exactly the most appetizing thing. But the worst part for me, without a doubt, is the sound. The crunch and pop of bone, the whine of stretching skin, the wet splat of blood and offal. I’ve never gotten used to it, even after 27 years. I can’t crack open a soda can or stretch a rubber band for days afterwards without a chill running up my spine. It’s embarrassing and awkward and kind of like all of the worst parts of puberty squeezed into ten minutes, though with maybe a little less acne. It also puts a serious damper on the possibility of any birthday sex. I try not to be too bitter about it. 
+
+ <br>
+
+            My mom says it’s normal, that it runs in the family. Apparently, her cousin in Fresno has the exact same problem, except she goes through it every time she gets her period, so in a way, I guess I got lucky. No one’s really sure what the cause is—I’ve heard genetic disorders, werewolf bites, even a curse—but whatever the reason, the problem remains the same. Every year, at exactly the time of my birth, my body breaks, twists, and rearranges itself, and the next morning, I see a completely different person when I look into the mirror. When I was younger and down about the whole thing, my mom tried to make me feel better by saying I was like a butterfly emerging from its cocoon. After I turned thirteen, she stopped trying to make me feel better. 
+
+ <br>
+
+ This year, it’s my 27th birthday and my 27th face. I don’t even bother trying to go to sleep. I just stay awake, scrolling on my phone, counting down the minutes till the change. Thankfully, it doesn’t hurt, emotional and psychological damage aside. By now, I’ve learned to plan ahead. There’s a plastic cover on the bed to make sure I don’t stain my sheets. 
+
+ <br>
+
+ When the transformation finally comes, it’s sudden, a slight twinge in my bones the only warning I receive. I do my best to breathe through it, to relax and just ride out the wave. My ribs go concave. My fingers bend backward. My teeth shift in their gums and my vision blurs. When my new body finally settles, I wiggle my toes first, just to test things out. Everything seems to have gone smoothly. If anything, it seems to be getting easier with age. I won’t know for sure until I measure, but I think I’ve grown a few inches this time around. 
+
+ <br>
+
+I swing my feet over the edge of the bed and pad barefooted to my bathroom to inspect the damage in the mirror. Last year, my face was soft and sweet, the kind that made you feel safe spilling secrets and sharing smiles. This time around, my cheekbones are higher, my chin a little pointier. When I smile, my right incisor is crooked. It’s bad enough that anyone would tell me to get braces, but it’s not like there’d be much point. I’ll have a completely different smile in a year’s time anyway. I start practicing expressions. Anger, then excitement, then despair. I cycle through the range of human emotions, trying each one on for size. I don’t like this face nearly as much as the last one. She looks a lot meaner. I curl my lip, tug at the skin under my eyes. Everything feels foreign and out of place, stretched too thin or pulled too tight. I’m going to have to change the placement of my blush again. 
+
+ <br>
+
+ I’m deep in the throes of my examination when my phone buzzes against the counter. My mom’s face smiles up at me from the screen, bugging me for a video call. She stays up late every year and dials my number the second the clock hits 3:45, ready to see my new face for herself. 
+
+ <br>
+
+ “Hey, sweetie!” Her voice bounces off the bathroom tile. “Ooh, I like this one! You look very svelte!” 
+
+ <br>
+
+“Hey, mom.” How she manages to have so much energy at this hour is beyond me. 
+
+ <br>
+
+“Did everything go alright?” she asks. “No hiccups this time?” 
+
+ <br>
+
+  “No mom, no hiccups.” After my leg had gotten stuck facing the wrong way in 4th grade, my mom always checked to make sure things went smoothly 
+
+ <br>
+
+“Well, that’s great!” She’s holding the camera too close to her face, her wrinkles on full display. It looks like she’s lying in bed. I can hear my dad snoring in the background. “I’m very proud of you.” Supportive to the end, like always. It’s easy for her to be encouraging. She’s kept the same face her entire life. 
+
+ <br>
+
+ “You look a little familiar.” She squints at my face through her readers. “Did you have this face once before?” I blink. That’s a new one. I’ve never repeated a face before—frankly, if that was an option, I would’ve picked one and stuck with it ages ago. 
+
+ <br>
+
+ “Uh, no, I’m pretty sure it’s new,” I said. My mom takes a closer look, biting her tongue. 
+
+ <br>
+
+ “Are you sure? I could’ve sworn I’ve seen you somewhere before.” 
+
+ <br>
+
+ “I’m your daughter, mom,” I sigh. “You’ve seen me plenty of times before.” The whole thing makes me crazy enough as it is if I think about it for too long, and an inquisition from my mom is the last thing I need. “Look, I’m pretty tired, and I’ve got work tomorrow. I’m fine, everything went fine, and I look fine. Can I call you back tomorrow?” 
+
+ <br>
+
+“Of course, sweetie!” My mom chirped. “I’m just happy to see your face.” Ha. “I love you! I’ll call you tomorrow.” 
+
+ <br>
+
+“Love you too, mom. Thanks for calling.” 
+
+ <br>
+
+“Get some rest! Oh, and happy birthday!” She waves at her phone, then hangs up, leaving me alone in the bathroom, face harshed by the white fluorescent lights. I take one last look, drinking it all in. This is what I have to work with for the next year. Best to get comfortable with it now. The face of a stranger stares back at me, tired and slightly judgmental. My face just looks more…sour. I sigh and flick off the lights, wandering back to my room. I peel the plastic off my bed and crawl under the covers, doing my best to ignore the new sensation of air on my toes as my feet poke out from my too-short sheets. The transformation always tires me out. It only takes a moment for me to fall asleep. 
+
+ <br>
+
+Three hours later, my alarm shrieks and yanks me awake. I take a minute to curse myself out for being too dumb to call out of work. I unlock my phone—with a passcode, no face or fingerprint ID for me—and turn off the alarm before taking a few precious seconds to stare at the ceiling. New year, new me, same piece of shit job. 
+
+ <br>
+
+ My clothes are all wrong now, selected for a body that no longer exists. My pants are showing a lot more ankle, and my shirt suddenly has a lot of extra fabric around the chest. I fix up a big breakfast to satisfy my stomach. The transformation isn’t painful, but it always leaves me ravenous for the next few days. The walk to my car is quick. Turns out adding a few extra inches of height really helps you cover ground faster. I catch a few strange looks as I walk by, but it’s hardly anything new. My neighbors are used to a completely different woman leaving my apartment each morning, so they’re allowed a bit of light staring. One girl lets out a sharp gasp upon seeing me, her face drained of blood. Huh. It’s a slightly stronger reaction than what I’m used to, and it’s almost enough for me to stop and explain, but her friends shush her and usher her along before I get the chance. 
+
+ <br>
+
+My car is cheap and dirty, but it’s tolerated quite a few bumps against the curb, and it always waits patiently for me in the parking lot. I feel like my car fit my last face better. My current appearance seems more suited for something sleek and mean, not an old beater. When I hop in, my knees fold up against the steering wheel. The seat hums as I push it back, and I catch another glimpse of my eyes as I adjust the mirrors. The color may be different, but the heavy purple shadows underneath them are something I’ve gotten used to, no matter what face I wear. 
+
+  <br>
+
+	The drive to work sucks, like it always does, twenty-seven minutes through gridlock and top 40 hits mixed with the news on the radio. Some prick in a green Volvo won’t let me merge, and I lay on the horn with gusto. 
+
+  <br>
+
+ “Asshole!” My voice is almost louder than the horn, and I make a rude gesture as I draw even with him. The Volvo revs its engine and speeds off, leaving me with a cloud of foul black exhaust. 
+
+  <br>
+
+ “…killed in a drunk driving accident at 3:15…” The obnoxiously perky radio host is running down the morning news instead of playing my top 40 hits like any decent radio station should. I crank the dial to the next station in a huff. It goes from depressing news to dad rock from the ‘70s. I cut to the left lane and try not to smile as I pass the Volvo, now stuck behind an old woman in a beat-up sedan.
+
+  <br>
+
+ Work is a different flavor of miserable today. Being a low-level assistant at a PR firm is already a special kind of hell, filled with groveling and matcha lattes, but there’s a tension in the air that usually means I’m about to deal with an extra pile of shit. One girl rushes by, tugging on a broken heel with one hand and taking notes on her phone with the other. The intern is in the corner apologizing profusely on a headpiece, sweat beading his brow. The TV on the wall is playing the news at full blast, a much higher volume than my manager normally allows. Lucy says it throws off her internal monologue, but apparently whatever’s playing is more important today. Even the news anchor looks a little somber, her blonde wig deflated and limp. She’s covering the death of some celebrity, sporting a picture-perfect pout. I can feel a headache pulsing behind my eyes already. I really should’ve called out.
+
+  <br>
+
+ Holly sits at the center of the chaos, phone in hand, feet propped up on her desk, chomping on a stick of electric blue raspberry gum. She’s humming a K-pop song I faintly recognize under her breath. 
+
+  <br>
+
+“Morning,” I say, heading over to the only safe haven. “You know what’s going on? It seems kind of tense.” 
+
+  <br>
+
+“Morning.” Holly blows a bubble and scrolls twice. “Not a clue.” How the lead receptionist could get away with caring so little was beyond me. 
+
+  <br>
+
+“You already send somebody for coffee?” I ask. I’m hoping the answer is yes.
+
+  <br>
+
+  “You know that’s your job,” she says. Damn it. “Caramel frapp with extra whip, please.” 
+
+  <br>
+
+ “I think they said they were out of caramel yesterday.”
+
+  <br>
+
+“What?” She groans and finally looks up at me. When she does, her jaw drops. “Woah, you look different.”
+
+ <br> 
+
+“My birthday was yesterday, Holly, we’ve been over this.” I know my situation is a little…unique, but I’ve been working here for five years. She’s had plenty of time to get used to it. She chews on her gum, staring thoughtfully at my face. 
+
+ <br>
+
+ “You look kind of familiar,” she says. 
+
+  <br>
+
+	“Really?” That’s the second time I’ve heard that today. 
+
+  <br>
+
+	“Yeah, I swear I’ve seen you somewhere before…” She narrows her eyes and studies my face before snapping her fingers. “Got it! You look just like my cousin Hannah.” 
+
+ <br>
+
+“Is that a good thing?” I ask. She blows another huge bubble and it pops over her lips. 
+
+ <br>
+
+“I mean, it could be worse.” Apparently satisfied, she turns back to her phone. “Oh, by the way, Lucy said she wanted you to stop by her office before you grab coffee. Sorry. Forgot to mention it earlier.” 
+
+ <br>
+
+Great. My headache sharpens to an ice pick jammed into my skull. Lucy’s usually too busy dealing with celebrities to focus on the assistants. It’s not a great sign if I’ve got her attention, but there’s no choice but to face her down.
+
+ <br>
+
+As I walk to her office, the door swings open and Kiersten runs out, her face shining with tears. That can’t be good. I start to feel queasy on top of the headache. Maybe Lucy’s in one of her firing moods, and this is the day I finally get laid off. 
+
+ <br>
+
+“Come in!” Her voice sounds suspiciously perky. I journey into the lion’s den.
+
+ <br>
+
+Lucy’s office is clean and fresh in a way that tells me she rules with an iron fist at home. She’s got one of those fancy multicolored keyboards designed to have quiet keys, and the soothing sounds of water running filter through the speakers. It’s all very zen. Lucy’s looking out the window, chin in her hand. I’m fully prepared to lose my job. Picking up frappes and Americanos only nets so much good favor. So, when she turns around, sees me, and bursts into tears, I’m a little shocked. 
+
+ <br>
+
+“Thank God you’re alright.” She leaps out of her chair and wraps me in a bear hug. I give her an awkward pat on the back. 
+
+ <br>
+
+ “Uh, yeah, everything’s fine,” I say. Lucy knows about my “problem”, but she’s never really seemed to worry about me that much. Half of the time, I’m convinced she doesn’t really know my name. I’m not sure when we got so close. 
+
+ <br>
+
+“I was so worried,” she sobs. 
+
+ <br>
+
+ “What are you talking about?” I gently peel her off of me and look her in the eyes. “This happens every year, Lucy. It was my birthday yesterday.” Lucy’s brow furrows. 
+
+ <br>
+
+“Your birthday…?” she trails off. “Wait, Jan, is that--?” The tears dry abruptly, and she lets me go and takes three steps back. Her jaw hangs open, her eyes blown wide with fear. I shift uncomfortably. Lucy’s been through this whole thing before, so this reaction seems a little unnecessary. I’m half wondering if I managed to miss something on my face during last night’s inspection. Maybe I’ve got a lazy eye? 
+
+ <br>
+
+ “Of course it’s me, Lucy. We’ve gone over this a few times,” I gently prod. Lucy’s mouth still hasn’t fully closed. I consider whether tossing a paperclip on her tongue would be worth losing my job. Instead of dignifying me with a response, she moves to her desk and furiously types something in with shaking hands. She beckons me over to view her monitor, face grim. She’s pulled up a news article, fresh from this morning, with a picture of a grisly car accident splashed front and center. 
+
+ <br>
+
+“Young starlet killed in accident,” the headline reads. My mouth goes dry. The article continues. “Supermodel Megan Rodgers was killed in a head-on collision with a drunk driver at 3:15 this morning. Authorities are still searching for the culprit. If you have any tips, call the number below.” 
+
+ <br>
+
+I know that name. Megan Rodgers was one of our clients, a new big name to help out the firm. Lucy had been thrilled about it. I’d never met the lady in person, but I knew she was supposed to be the new hot thing right now. 
+
+ <br>
+
+“Explain this,” Lucy says. I stare back at her. Sure, her death was sad, but it had nothing to do with me. 
+
+ <br>
+
+ “I’m not sure what you’re talking about.” I’m walking through a verbal landmine, and I’m worried I’ve got bigger problems than just losing my job. 
+
+ <br>
+
+ “You will be in a second,” Lucy says. She scrolls down a little further through the article, and that’s when I see the picture.  
+
+ <br>
+
+Same strong nose, same brown eyes, same twist to the upper lip. Hell, even the same crooked incisor. Most damning, though, are the little things. The slope of her shoulders. The curve of her nostrils. The slant of her brow. It’s a face that is new to me, but intimately familiar. It’s the face of a dead woman, but it can’t be, because it’s my own face, clear as day, staring right back at me. 
+
+ <br>
+
+ “Now, I know about your little ‘situation’, Lucy says, “but you can see why this might leave me with a few questions.” I can barely hear her over my own racing thoughts. I’ve cycled through different faces and bodies my entire life. Tall, fat, weak, ugly, stunning—I’ve had the pleasure of seeing it all. My whole life, I had thought that they were fresh faces, a sort of rebirth, with no history to bog them down, no strings attached. But this changes everything I knew, a complete upending of my reality. As poor dead Megan Rodgers’ face stares accusingly at me, one question plays on repeat in my mind, drowning out everything around me. 
+
+ <br>
+
+Have I been wearing the faces of the dead?
+</p5>
+   </main>
+
+   <button style="
+    padding-left: 6px;
+    margin-left: 1350px;
+">Nächste Seite</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
