@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Tangun Taekwondo Club Tulln</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --main: #0d2c44;
+      --accent: #ffcc00;
+      --light: #f5f5f5;
+      --dark: #222;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--light);
+    }
+    header {
+      background: var(--main);
+      color: #fff;
+      padding: 1rem 1rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; margin-bottom: .5rem; }
+    header p { font-size: 1.1rem; }
+    nav {
+      background: var(--main);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav li { position: relative; }
+    nav button {
+      background: none;
+      border: none;
+      color: #fff;
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background .2s;
+    }
+    nav button:hover,
+    nav button:focus {
+      background: rgba(255,255,255,.15);
+    }
+    nav .sub {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background: var(--main);
+      display: none;
+      flex-direction: column;
+      min-width: 220px;
+    }
+    nav li:hover .sub,
+    nav li:focus-within .sub {
+      display: flex;
+    }
+    nav .sub button {
+      width: 100%;
+      text-align: left;
+      padding: .75rem 1.25rem;
+      font-size: .95rem;
+    }
+    .button {
+      color: white;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section { margin-bottom: 3rem; }
+    h2 { margin-bottom: 1rem; color: var(--main); }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .75rem 1.5rem;
+      background: var(--accent);
+      color: var(--main);
+      font-weight: 700;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .btn:hover { filter: brightness(1.1); }
+    footer {
+      background: var(--main);
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .9rem;
+    }
+    @media (max-width: 600px) {
+      nav ul { flex-direction: column; }
+      nav .sub { position: static; }
+    }
+  </style>
+</head>
+<body>
+ 
+<header>
+  <h1>Tangun Taekwondo Club Tulln</h1>
+  <p>Traditionelles & modernes Taekwondo seit 1986</p>
+</header>
+ 
+<nav aria-label="Hauptnavigation">
+  <ul>
+    <li><button>Start</button></li>
+ 
+    <li>
+      <button>Unsere Werte</button>
+      <div class="sub">
+        <button>Respekt</button>
+        <button>Disziplin</button>
+        <button>Fairness</button>
+        <button>Gemeinschaft</button>
+        <button>Freude am Lernen</button>
+      </div>
+    </li>
+
+    <li>
+      <button>Trainings</button>
+      <div class="sub">
+        <button>Montag</button>
+        <button>Mitwoch</button>
+        <button>Donnerstag</button>
+        <button>Freitag</button>
+        <button>Samstag</button>
+        <button>Sonntag (nicht so oft)</button>
+      </div>
+    </li>
+ 
+    <li>
+      <button>Training & Kurse</button>
+      <div class="sub">
+        <button>Bambinis</button>
+        <button>Kinder</button>
+        <button>Jugend</button>
+        <button>Erwachsene</button>
+        <button>Taekwondo-Disziplinen</button>
+        <button>Prüfungen (KUP & DAN)</button>
+      </div>
+    </li>
+ 
+    <li> 
+      <button>Trainerteam</button>
+      <div class="sub">
+        <button>BRANDL Dietmar</button>
+        <button>SCHINDL Dominik</button>
+        <button>DANEK Margit-Angela</button>
+        <button>SAIDI Mohamed (Chilli)</button>
+        <button>HIRSCHLER Michael</button>
+        <button>GUGENBERGER Hannes</button>
+        <button>BLOCHER David</button>
+        <button>DOSCHEK Anna</button>
+        <button>GRUBER Alexandra</button>
+        <button>BLOCHER David</button>
+        <button>KOVACEVIC Savo</button>
+        <button>FIEGL Anton</button>
+      </div>
+    </li>
+ 
+    <li>
+      <button>Erfolge & Galerie</button>
+      <div class="sub">
+        <button><a class="button" href="https://www.tanguntulln.at/index.php/verein-tangun-tulln/erfolge">Erfolge</a></button>
+        <button><a class="button" href="https://www.tanguntulln.at/index.php/verein-tangun-tulln/fotos-videos">Fotos und Videos</a></button>
+      </div>
+    </li>
+ 
+    <li>
+      <button>Events & Termine</button>
+      <div class="sub">
+        <button>TNT-Cup</button>
+        <button>TCT-Breitensportlehrgang</button>
+        <button>Clubmeisterschaft</button>
+        <button>Ferien- & Schulaktionen</button>
+      </div>
+    </li>
+ 
+    <li>
+      <button>Kontakt</button>
+      <div class="sub">
+      <button>E-Mail</button>
+      <button>Telefonnummer</button>
+      <button>Website</button>
+      <button>Instagram</button>
+      </div>
+    </li>
+  </ul>
+</nav>
+ 
+<main>
+  <section id="start">
+    <h2>Willkommen beim Tangun Taekwondo Club Tulln</h2>
+    <p>
+      Seit über 30 Jahren bieten wir professionelles Taekwondo-Training für alle Altersgruppen – von 4 bis 83 Jahren.
+      Bei uns stehen Respekt, Disziplin und Freude am Lernen im Mittelpunkt.
+    </p>
+  </section>
+ 
+  <section id="ueber">
+    <h2>Über uns</h2>
+    <p>
+      Gegründet 1986, zählt Tangun Tulln heute rund 170 Mitglieder. Unsere Trainer sind staatlich geprüft und
+      unterrichten traditionelles Taekwondo, olympisches Kyorugi, Poomsae und Selbstverteidigung.
+    </p>
+  </section>
+ 
+  <section id="training">
+    <h2>Training & Kurse</h2>
+    <ul>
+      <li><strong>Bambinis (4-6 J.)</strong> – Spielerische Bewegung, erste Techniken</li>
+      <li><strong>Kinder (6-12 J.)</strong> – Koordination, Selbstvertrauen, Technik</li>
+      <li><strong>Jugend</strong> – Kondition, Wettkampf, Selbstverteidigung</li>
+      <li><strong>Erwachsene</strong> – Fitness, Technik, Schwarzgurt-Programm</li>
+    </ul>
+    <p>Disziplinen: Poomsae, Kyorugi, Hosinsul, Kibon, Kyokpa</p>
+  </section>
+ 
+  <section id="team">
+    <h2>Trainerteam</h2>
+    <p>
+      Großmeister Dietmar Brandl (7. DAN) leitet den Verein. Unterstützt wird er von diplomierten
+      Kinder- und Jugendtrainer*innen sowie Wettkampfcoaches.
+    </p>
+  </section>
+ 
+  <section id="erfolge">
+    <h2>Erfolge</h2>
+    <p> Mit rund 170 Mitgliedern, davon 80 % Kinder und Jugendliche, zählt Tangun zu den stärksten Vereinen der Region.
+Unsere Sportler*innen gewinnen regelmäßig Landes-, Staats- und Österreichische Meistertitel. TNT-Cup mit 350 Startern.</p>
+  </section>
+ 
+  <section id="events">
+    <h2>Events</h2>
+    <ul>
+      <li>TNT-Cup</li>
+      <li>TCT-Breitensportlehrgang</li>
+      <li>Clubmeisterschaft</li>
+      <li>Ferien- & Schulaktionen</li>
+      <li>Prüfungen</li>
+      <li>Turniere</li>
+    </ul>
+  </section>
+ 
+  <section id="kontakt">
+    <h2>Kontakt & Schnuppertraining</h2>
+    <p>
+      <strong>Ort:</strong> Volksschule 1 „Egon Schiele“, Karnergasse, 3430 Tulln
+      <br>
+      <strong>E-Mail:</strong> info@tanguntulln.at
+      <br>
+      <strong>Tel:</strong> +43 664 2714815
+      <br>
+      <strong>Website:</strong> <a href="https://www.tanguntulln.at/"> https://www.tanguntulln.at/</a> 
+    </p>
+  </section>
+</main>
+ 
+<footer>
+  © 2025 Tangun Taekwondo Club Tulln – Alle Rechte vorbehalten
+</footer>
+ 
+</body>
+</html>
